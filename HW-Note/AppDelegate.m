@@ -17,7 +17,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self requestPermission];
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
+    UILocalNotification *localNotification = launchOptions[UIApplicationLaunchOptionsLocalNotificationKey];
+    if(localNotification)
+    {
+        self.isOpenFromLocalNotification = YES;
+    }
     return YES;
+}
+
+-(void)requestPermission {
+    
+    UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:setting];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -41,5 +58,27 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    
+    NSLog(@"notificationSettings %@", notificationSettings);
+    
+}
+
+
+- (void)application:(UIApplication *)application
+didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"didReceiveLocalNotification %@", notification );
+    
+    UIApplicationState state = [application applicationState];
+    if (state == UIApplicationStateActive) {
+        
+    }
+    else {
+        
+    }
+}
+
 
 @end

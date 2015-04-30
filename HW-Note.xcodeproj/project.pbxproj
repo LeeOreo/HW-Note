@@ -14,6 +14,8 @@
 		9381F4771AF284DA00343330 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9381F4761AF284DA00343330 /* Images.xcassets */; };
 		9381F47A1AF284DA00343330 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9381F4781AF284DA00343330 /* LaunchScreen.xib */; };
 		9381F4861AF284DA00343330 /* HW_NoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9381F4851AF284DA00343330 /* HW_NoteTests.m */; };
+		9381F4901AF29CEE00343330 /* ringtone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9381F48F1AF29CEE00343330 /* ringtone.mp3 */; };
+		9381F4921AF29EF300343330 /* ringtone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9381F4911AF29EF300343330 /* ringtone.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		9381F47F1AF284DA00343330 /* HW-NoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW-NoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9381F4841AF284DA00343330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9381F4851AF284DA00343330 /* HW_NoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW_NoteTests.m; sourceTree = "<group>"; };
+		9381F48F1AF29CEE00343330 /* ringtone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ringtone.mp3; sourceTree = "<group>"; };
+		9381F4911AF29EF300343330 /* ringtone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringtone.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				9381F4681AF284DA00343330 /* HW-Note */,
 				9381F4821AF284DA00343330 /* HW-NoteTests */,
 				9381F4671AF284DA00343330 /* Products */,
+				9381F48F1AF29CEE00343330 /* ringtone.mp3 */,
+				9381F4911AF29EF300343330 /* ringtone.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,8 +205,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9381F4901AF29CEE00343330 /* ringtone.mp3 in Resources */,
 				9381F4751AF284DA00343330 /* Main.storyboard in Resources */,
 				9381F47A1AF284DA00343330 /* LaunchScreen.xib in Resources */,
+				9381F4921AF29EF300343330 /* ringtone.wav in Resources */,
 				9381F4771AF284DA00343330 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
